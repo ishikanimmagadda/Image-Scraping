@@ -17,5 +17,8 @@ def download_image(url, local_folder_path):
             file.write(response.content)
 
         print("Downloaded:" + url.split("/")[-1])
+    
+    else: 
+        print("Error Downloading")
 
 download_image("https://picsum.photos/id/237/200/300","/Users/ishikanimmagadda/Desktop/one more time/Image-Scraping/images")
